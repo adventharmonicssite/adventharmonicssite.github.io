@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -59,15 +60,15 @@
 					
 					<section>
 						<h2 style="text-align: center; ">Send us a message</h2><hr><br>
-						<form method="post" action="#">
+						<form method="post" action="contact-form-handler.php">
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="name" id="name" required/>
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required/>
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
@@ -75,10 +76,11 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input a href="recieved_message.html" type="submit" value="Send Message" /></li>
 							</ul>
 						</form>
 					</section>
+
 					<section class="split contact">
 						<section class="alt">
 							<h3>Country</h3>
