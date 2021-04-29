@@ -14,6 +14,32 @@
 	</head>
 	<body class="is-preload">
 
+				<!-- Messenger Chat Plugin Code -->
+				<div id="fb-root"></div>
+				<script>
+				window.fbAsyncInit = function() {
+					FB.init({
+					xfbml            : true,
+					version          : 'v10.0'
+					});
+				};
+
+				(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+				<!-- Your Chat Plugin code -->
+				<div class="fb-customerchat"
+				attribution="page_inbox"
+				page_id="104454718411655">
+				</div>
+
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -44,56 +70,50 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
+									<span class="date">•••</span>
 									<h1>Advent Harmonics
 									</h1>
-									<hr>
+									
 								</header>
 
 								<!-- Text stuff -->
-									<h2> We are a ministry</h2>
-									<p>We do not just "<em>create music</em>", we plant seeds of hope and love for Jesus through music.</p>
 									<h2> We are young people</h2>
 									<p>	We are young people dedicated to serving God through our God-given talents and capabilities.</p>
 									<h2> We are calling</h2>
 									<p>	We are calling the youth to use all your talents God has given you for Him alone. He called us, we answered.</p>
+									
+									<h2> We are a ministry</h2>
+									<p>We do not just "<em>create music</em>", we plant seeds of hope and love for Jesus through music.</p>
 									<h2> Our Goal</h2>
 									<p>Our goal is to <span style="font-size: 1.2rem; font-style: italic;">lift Jesus up</span> and to tell people that <span style="font-style: italic; font-size: 1.2rem">He is coming again</span>.</p>
 									
 									<hr>
+									<h1>Contact Info</h1>
+
+									<h4>Email:	</h4>
+										<p>- productions@adventharmonics.live</p>
 									
-									<h4> TO GOD BE ALL THE GLORY.</h4>
+									<h4>Socials:</h4>
+
+										<ul class="icons alt">
+								
+											<li>-    <a href="https://www.facebook.com/adventharmonicsmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li>   <a href="https://www.instagram.com/advent_harmonics/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+
+										</ul>
+
+									<h4>Phone:	</h4>
+									<p>- (+63) 905-667-3056</p>
+								
+										<hr>
+									
 
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-				<footer id="footer">
-
-					<section class="split contact">
-						<section class="alt">
-							<h3>Country</h3>
-							<p>Philippines</p>
-						</section>
-						<section>
-							<h3>Phone</h3>
-							<p>(+63) 905-667-3056</p>
-						</section>
-						<section>
-							<h3>Email</h3>
-							<p><a href="https://mail.google.com/mail/u/0/#inbox">productions@adventharmonics.live</a></p>
-						</section>
-						<section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								
-								<li><a href="https://www.facebook.com/adventharmonicsmusic" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/advent_harmonics/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								
-							</ul>
-						</section>
-					</section>
-				</footer>
+				
 
 				<!-- Copyright -->
 					<div id="copyright">
